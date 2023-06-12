@@ -1,4 +1,5 @@
 import sys
+import time
 import pyautogui
 import countdown_module
 
@@ -26,5 +27,9 @@ with open(FILE_PATH, 'r') as file:
         # Type the line
         pyautogui.typewrite(line)
 
+        time.sleep(.7)
+
         # Press Enter
         pyautogui.press('enter')
+
+    print("FINISH type_enter")
