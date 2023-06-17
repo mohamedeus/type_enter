@@ -32,4 +32,6 @@ with open(FILE_PATH, 'r') as file:
         # Press Enter
         pyautogui.press('enter')
 
+        time.sleep(.3)
+
     print("FINISH type_enter")
